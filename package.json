@@ -1,0 +1,9 @@
+{
+    "name": "nodejs-express-mongodb",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "app.mjs",
+    "scripts": {
+        "start": "node app.js"
+    }
+}
