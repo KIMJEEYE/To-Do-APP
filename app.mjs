@@ -1,4 +1,3 @@
-// app.js 파일
 import * as user from './user.js';
 import * as todo from './todo.js';
 
@@ -24,7 +23,6 @@ class TodoApp {
     this.todoManager = new TodoManager();
   }
 
-  // 사용자 관련 메소드
   showFirstPage(choice, ...args) {
     console.log("===== 로그인 페이지 =====");
     console.log("1. 회원가입");
@@ -108,7 +106,6 @@ class TodoApp {
     deleteCommand.execute();
   }
 
-  // Todo 관련 메소드
   showTodoMenu(choice, ...args) {
     console.log("===== Todo 메뉴 =====");
     console.log("1. Todo 추가");
@@ -178,7 +175,6 @@ class TodoApp {
     this.showFirstPage(1, this.user2);
     this.showFirstPage(2, this.user2);
 
-    // 로그인 상태인지 확인
     if (this.userManager.currentUser) {
       this.createTodo();
       this.showTodoMenu("1");
